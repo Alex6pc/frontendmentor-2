@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+:root {
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray:hsl(0, 0%, 59%);
+}
+
+*{  
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--Dark-cyan) ;
+    background-repeat: no-repeat;
+    
+    width: 100vw;
+    font-size: 16px;
+    font-family: 'Kumbh Sans';
+    z-index: -1;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 200px;
+    width: 380px;
+    height: 400px;
+    background-color: var(--Very-pale-blue);
+    border-radius: 20px;
+    box-shadow: 0px 1px 2px rgb(73, 56, 56);
+    background-color: white;
+    z-index: 1;
+}
+
+.circle1 {
+    background: url(./images/bg-pattern-top.svg);
+    position: fixed;
+    top: -30%;
+    left: -10%;
+    width: 700px;
+    height: 700px;
+    border-radius: 350px;
+    z-index: -2
+}
+.circle2{
+    background: url(./images/bg-pattern-bottom.svg);
+    position: fixed;
+    bottom: -0px;
+    right: -0px;
+    width: 700px;
+    height: 500px;
+    z-index: -1;
+    }
+    .heading-photo{
+        width: 380px;
+        border-radius: 20px 20px 0 0;
+    }
+    @media screen and (max-width:600px){
+    .circle1,.circle2{
+        width: 400px;
+        height: 500px;
+        transition: 2s;
+
+
+    }
+
+}
+    @media screen and (max-width:500px) {
+        .wrapper, .heading-photo,.card-stats {
+            width: 350px;
+            transition: 1s;
+            
+        }
+    }
+
+.person-photo{
+    position: absolute;
+    margin-top: 100px;
+    border-radius: 50%;
+    border:solid rgb(255, 255, 255) 5px;
+    z-index: 2;
+}
+
+.card-header{
+    text-align: center;
+    margin-top: 50px;
+    
+    
+}
+.card-header h1{
+    font-size: 20px;
+    margin-top: 22px;
+    color:var(--Very-dark-desaturated-blue);
+}
+.card-header span{
+    color: var(--Dark-grayish-blue);
+    font-weight: 55;
+}
+.card-header p {
+    margin-top: 8px;
+    font-weight: 10;
+    color:var(--Dark-gray);
+
+}
+
+.card-stats{
+    display: flex;
+    margin-top: 20px;
+    border-top:solid 1px;
+    border-color: var(--Dark-gray);
+    padding: 20px 38px 20px ;
+  
+   
+    
+    
+  
+}
+.card-stats ul {
+    margin: 18px 25px;
+    list-style: none;
+    text-align: center;
+}
+.card-stats ul .card-stat{
+    font-size: 20px;
+    font-weight: 600;
+    color:var(--Very-dark-desaturated-blue);
+    
+}
+.card-stats ul .card-category{
+    font-size: 10px;
+    color: var(--Dark-gray);
+    letter-spacing: 2px;
+    margin-top: 3px;
+}
+
+.attribution{
+    font-size: 12px;
+    margin-top: 200px;
+}
+    
+    
